@@ -1,0 +1,91 @@
+body {
+    justify-items: center;
+    background-image: linear-gradient(rgba(55, 55, 55, 0.482), rgba(0, 0, 0, 0.6)), url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main-container {
+    background-color: rgba(249, 205, 218, 0.336);
+    box-shadow: 0 0 5px 2px rgba(90, 90, 90, 0.5);
+    border-radius: 10px;
+    width: 30%;
+    padding: 15px 10px;
+}
+h1 {
+    background-color: lightgray;
+    border-radius: 10px;
+    width: 700px;
+    padding: 20px 15px;
+}
+#inputTask {
+    width: 220px;
+    height: 30px;
+}
+#addTask {
+    width: 120px;
+    height: 35px;
+    cursor: pointer;
+    background-color: gray;
+    align-items: center;
+    border: none;
+    color: white;
+    font-size: 14px;
+}
+#addTask .addIcon {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+#addTask:hover {
+    background-color: lightpink;
+    color: black;
+}
+.filters {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+#all {
+    background-color: darkgray;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#all:hover {
+    background-color: lightgray;
+    color: rgb(255, 49, 128);
+}
+#active {
+    background-color: darkgray;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#active:hover {
+    background-color: lightgray;
+    color: rgb(255, 49, 128);
+}
+#completed {
+    background-color: darkgray;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#completed:hover {
+    background-color: lightgray;
+    color: rgb(255, 49, 128);
+}
+ul {
+    padding: 3px 8px;
+    list-style-type: none;
+    width: 30%;
+    align-content: start;
+}
+li {
+    padding: 10px;
+}

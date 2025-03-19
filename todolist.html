@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="todostyle.css">
+</head>
+<body>
+    <i id="dmicon" class="fa-solid fa-circle-half-stroke" style="font-size: 30px; position: absolute; top: 44px; right: 290px; cursor: pointer;"></i>
+    <h1 id="heading1">TO-DO LIST 📝</h1>
+    <div class="main-container">
+        <center>
+            <input type="text" id="inputTask" placeholder="Enter a task..." style="background-color: rgba(255, 255, 255, 0.441); 
+            border: 1.5px solid rgb(65, 65, 65);">
+            <button id="addTask">
+                <img src="addIcon.png" alt="Add icon" class="addIcon">
+                Add Task
+            </button>
+        </center>
+        <div class="filters">
+            <button id="all">All Tasks</button>
+            <button id="active">Active Tasks</button>
+            <button id="completed">Completed Tasks</button>
+        </div>
+    </div>
+    <table style="width: 400px; border-collapse: collapse; margin-top: 15px; background-color: rgba(245, 245, 245, 0.393);">
+        <tr>
+            <th style="padding: 5px; width: 135px; text-align: left; color: rgb(234, 76, 100); font-size: 20px;">Task/s</th>
+            <th style="padding: 5px; color: rgb(95, 95, 95); font-size: 20px;">Status</th>
+        </tr>
+    </table>
+    <ul id="tasklist"></ul>
+
+    <script src="todo.js"></script>
+</body>
+</html>
